@@ -43,7 +43,7 @@ html, body{
 }
 
 .open {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   position: fixed;
   top: 40px;
   right: 40px;
@@ -281,8 +281,6 @@ about p::after {
     	width: 100%;
     	max-width: auto;
        padding-top: -20;
-        margin-left: -20px;
-        margin-right: -20px;
     	overflow-x: hidden;
     	overflow: hidden;
     	text-align: center;
