@@ -2,6 +2,12 @@
 <html>
   
   <head>
+	  <meta charset="utf-8">
+
+	  <meta name ="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -16,9 +22,7 @@
   <span>
     <ul class="sub-menu ">
       <li class="active"> <a href="#section1">Home</a> </li>
-      <li> <a href="#section2 ">About</a> </li>
-      <li> <a href="#section3 ">Projects</a> </li>
-      <li> <a href="contact.html ">Contact</a> </li>
+
 
     </ul>
   </span>
@@ -67,4 +71,16 @@
   </div>
 </div>
   </body>
+	<script type="text/javascript">
+ jQuery(function($){
+     $( '.menu-btn' ).click(function(){
+     $('.responsive-menu').addClass('expand')
+     $('.menu-btn').addClass('btn-none')
+     })
+     $( '.close-btn' ).click(function(){
+     $('.responsive-menu').removeClass('expand')
+     $('.menu-btn').removeClass('btn-none')
+     })
+   })
+ </script>
 </html>
