@@ -1,31 +1,97 @@
-<div class="container col-md-8" style="text-align:center list-style-type:none">
-
-<form method="post" id="captcha_form" name="captcha_form" action="mailform.php"><fieldset><ol>
-
-
-	<li><label class="solo" for="email">Email address:</label><span class="required">(required)</span><input type="text" class="soloinput" name="email" id="email" value="" />
-
-	</li><li><label class="solo" for="name">Name:</label><span class="required">(required)</span><input type="text" class="soloinput" name="name" id="name" value="" />
-
-
-	</li><li><label class="solo" for="companyname">Company Name:</label><input type="text" class="soloinput" name="companyname" id="companyname" value="" />
-
-
-	</li><li><label class="solo" for="phone">Phone number:</label> <input type="text" class="soloinput" name="phone" id="phone" value="" />
-
-
-	</li><li><label class="solo" for="phone2">Second phone number:</label><input type="text" class="soloinput" name="phone2" id="phone2" value="" />
-
-	</li><li>
-	<?php $subject = "Work with me"; ?>
-		</li><li>
-	</li><li><label class="solo" for="message">Message:</label><span class="required">(required)</span>
-<div class="soloinput"><textarea class="soloinput" name="message" id="message" ></textarea>
-						<br />
-
-
-	<p><input name="submit" id="submit" type="submit" value="Send" style="float: right;" /></p></div>
-	</li></ol>
-</fieldset></form> &nbsp;<br />&nbsp;<br />&nbsp;
-	
-</div>
+<form name="contactform" method="post" action="send_form_email.php">
+ 
+<table width="450px">
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="first_name">First Name *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top"">
+ 
+  <label for="last_name">Last Name *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="email">Email Address *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="email" maxlength="80" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="telephone">Telephone Number</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="comments">Comments *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td colspan="2" style="text-align:center">
+ 
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ 
+ </td>
+ 
+</tr>
+ 
+</table>
+ 
+</form>
