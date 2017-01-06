@@ -22,15 +22,14 @@
   <span>
     <ul class="sub-menu ">
       <li class="active"> <a href="#section1">Home</a> </li>
-
-
     </ul>
   </span>
   <span class="cls "></span>
 
 		</div>
-<div class="contact">
+<div class="container">
   <div class="row header">
+	  <div class="contact">
     <h1>Contact me! &nbsp;</h1>
     <h3>If you have any questions please feel free to contact me!</h3>
   </div>
@@ -70,8 +69,37 @@
     </form>  
   </div>
 </div>
+	  </div>
   </body>
-	<script type="text/javascript">
+ <script>
+$(document).ready(function() {
+  $(document).delegate('.open', 'click', function(event){
+    $(this).addClass('oppenned');
+    event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function(event) {
+    $('.open').removeClass('oppenned');
+  })
+  $(document).delegate('.cls', 'click', function(event){
+    $('.open').removeClass('oppenned');
+    event.stopPropagation();
+  });
+});
+</script>
+
+
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+</script>
+
+
+<script type="text/javascript">
  jQuery(function($){
      $( '.menu-btn' ).click(function(){
      $('.responsive-menu').addClass('expand')
@@ -83,10 +111,27 @@
      })
    })
  </script>
-	  <script>        $('#nav').scroll(function () {
+  <script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+  </script>
+  <script>        $('#nav').scroll(function () {
             if (isNavBarShown) { return; }
             $('.navbar').fadeIn();
         });
   </script>
+
 
 </html>
