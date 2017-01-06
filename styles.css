@@ -275,7 +275,7 @@ about p::after {
     }
 
     .contact {
-	background color: rgb(198, 214, 239);
+	background-color: rgb(198, 214, 239);
     	position: absolute;
         height: 100%;
     	width: 100%;
@@ -289,7 +289,7 @@ about p::after {
 	
     }
 
-    .contact li {
+    .contact li h1 h3{
     	padding: 10px;
     	position: center center;
     	width: cover;
@@ -299,6 +299,6 @@ about p::after {
         margin-right: -20px;
     	overflow-x: hidden;
     	overflow: hidden;
-    	font-family: lobster;
+    	font-family: sans-serif "lobster";
 
     }
