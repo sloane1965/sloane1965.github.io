@@ -275,32 +275,33 @@ about p::after {
     }
 
     .contact {
-    	    background-color: #f7f7f7;
-        border: 20px solid #0f0;
-    	position: relative;
-
-        height: 400px;
+    	position: absolute;
+        height: 100%;
     	width: 100%;
-    	max-height: auto;
-        margin-top: -20;
+    	max-width: auto;
+       padding-top: -20;
         margin-left: -20px;
         margin-right: -20px;
     	overflow-x: hidden;
     	overflow: hidden;
-        padding: 0 0 0 0;
     	text-align: center;
 
     }
+.contact::after {
+	background-image: url(https://icons.wxug.com/data/wximagenew/w/walcek/513-awesome.jpg);
+	opacity: 0.5;
+    	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
     .contact li {
     	padding: 10px;
     	position: center center;
-    		width: cover;
+    	width: cover;
     	max-height: auto;
         margin-top: -20;
         margin-left: -20px;
         margin-right: -20px;
     	overflow-x: hidden;
     	overflow: hidden;
-    	font-family: cursive;
+    	font-family: lobster;
 
     }
