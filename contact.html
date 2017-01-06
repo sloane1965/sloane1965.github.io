@@ -1,4 +1,4 @@
-<div class="container col-md-8" style="text-align:center">
+<div class="container col-md-8" style="text-align:center list-style-type:none">
 
 <form method="post" id="captcha_form" name="captcha_form" action="mailform.php"><fieldset><ol>
 
@@ -16,21 +16,9 @@
 
 	</li><li><label class="solo" for="phone2">Second phone number:</label><input type="text" class="soloinput" name="phone2" id="phone2" value="" />
 
-	</li><li><label class="solo" for="month">Priority:</label><select class="soloinput" name="priority" id="priority">
-		<option value=""></option>
-		<option value="1">1 Lowest priority</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5 Highest priority</option>
-	</select>
+	</li><li>
 	<?php $subject = "Work with me"; ?>
-		</li><li><label class="solo" for="userpass">CAPTCHA:</label><span class="required">(required)</span>
-<div class="soloinput">
-Enter the text contained in the image into the text box:
-<br /><img id="captcha" src="captcha.php" alt="If your CAPTCHA image does not appear within five seconds, please hit the refresh button on your browser." />
-<br /><input type="text" class="soloinput" name="userpass" id="userpass" value="" />
-</div>
+		</li><li>
 	</li><li><label class="solo" for="message">Message:</label><span class="required">(required)</span>
 <div class="soloinput"><textarea class="soloinput" name="message" id="message" ></textarea>
 						<br />
