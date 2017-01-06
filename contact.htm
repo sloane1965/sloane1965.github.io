@@ -1,97 +1,41 @@
-<form name="contactform" method="post" action="send_form_email.php">
- 
-<table width="450px">
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="first_name">First Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="first_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="last_name">Last Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="last_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="email">Email Address *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="email" maxlength="80" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="telephone">Telephone Number</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="telephone" maxlength="30" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="comments">Comments *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td colspan="2" style="text-align:center">
- 
-  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
- 
- </td>
- 
-</tr>
- 
-</table>
+<!doctype html>
+<html>
+<?php
+if ($_POST){
+if (!filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)){
+$message="Please provide a correct email address";} else {
+  $name = strip_tags($_POST['name']);
+  $company_name = strip_tags($_POST['company_name']);
+  $telephone = strip_tags($_POST['telephone']);
+  $email = $_POST['email'];
+  $comments = strip_tags($_POST['comments']);
+  $to = 'trenholme90@hotmail.com';
+  $subject = 'Contact form submitted.';
+  $body = $name. "\n" .$comments;
+  $headers = 'From: ' .$email;
+  if (mail($to, $subject, $body, $headers)) {
+  echo 'Thanks for contacting us. We\'ll be in touch soon!';
+  } else {
+  $message = 'Sorry an error occurred. Please try again later.';
+  }
+  }}
+?>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<?php echo "<p style='color:red'>$message</p>"; ?>
+<div class="contact_form">
+    <form id="contactform" action="contact.php" method="post">
+<p>Name:<br/><input name="name" type="text" required /></p>
+<p>Company Name: <br/><input name="company_name" type="text" required/></p>
+<p>Telephone: <br/><input name="telephone" type="tel" required/></p>
+<p>Email: <br/><input name="email" type="email" required/></p>
+<p>Comments: <br/><textarea name="comments" required/>   </textarea></p>
+    <input type="submit" name="submit" value="Send!"/>
  
 </form>
+</div>
+</body>
+</html>
