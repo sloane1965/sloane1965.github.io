@@ -302,3 +302,6 @@ about p::after {
     	font-family: sans-serif "lobster";
 
     }
+.contact ul {
+	list-style-type: none;
+}
