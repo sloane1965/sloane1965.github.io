@@ -275,6 +275,7 @@ about p::after {
     }
 
     .contact {
+	background color: rgb(198, 214, 239);
     	position: absolute;
         height: 100%;
     	width: 100%;
@@ -285,13 +286,9 @@ about p::after {
     	overflow-x: hidden;
     	overflow: hidden;
     	text-align: center;
-
+	
     }
-.contact::after {
-	background-image: url(https://icons.wxug.com/data/wximagenew/w/walcek/513-awesome.jpg);
-	opacity: 0.5;
-    	filter: alpha(opacity=50); /* For IE8 and earlier */
-}
+
     .contact li {
     	padding: 10px;
     	position: center center;
