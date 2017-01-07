@@ -284,12 +284,19 @@ about p::after {
     	overflow-x: hidden;
     	overflow: hidden;
     	text-align: center;
+	z-index: 1;
+	position: center center;
+    	width: cover;
+    	max-height: auto;
+        margin-top: -20;
+        margin-left: -20px;
+        margin-right: -20px;
+    	overflow-x: hidden;
+    	overflow: hidden;
 	
     }
 
     .contact h1 h3{
-	z-index: 1;
-    	padding: 10px;
     	position: center center;
     	width: cover;
     	max-height: auto;
