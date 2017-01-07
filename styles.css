@@ -288,24 +288,13 @@ about p::after {
 	position: center center;
     	width: cover;
     	max-height: auto;
-        margin-top: -20;
-        margin-left: -20px;
-        margin-right: -20px;
-    	overflow-x: hidden;
-    	overflow: hidden;
+
 	
     }
 
-    .contact h1 h3{
+    .contact h1 h3 p{
     	position: center center;
-    	width: cover;
-    	max-height: auto;
-        margin-top: -20;
-        margin-left: -20px;
-        margin-right: -20px;
-    	overflow-x: hidden;
-    	overflow: hidden;
-    	font-family: sans-serif "lobster";
+    	font-family: "lobster", sans-serif;
 
     }
 .btn-submit {
