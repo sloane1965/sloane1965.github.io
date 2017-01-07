@@ -179,20 +179,19 @@ margin-right: 168px;
     }
 
 .main {
+  
   position: relative;
   top: 100px;
   text-align: center;
-  color: white;
   font-size: 55px;
-  padding: 0 0 0 0;
+  padding-bottom: 40px;
   margin-top: -35px;
-	width: auto;
-    height: 990px;
-    min-height: 628px;
-	background-color:grey;
-     -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+  width: auto;
+  height: 990px;
+  min-height: 628px;
+ -moz-background-size: 100% 100%;
+ -webkit-background-size: 100% 100%;
+ -o-background-size: 100% 100%;
 
 }
 
@@ -209,38 +208,38 @@ margin-right: 168px;
 
 }
 .about {
+    height: 700px;
+	width: cover;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    padding: 500px 0 0 0;
+    padding: 200px 0 0 0;
 
 }
 
 
 .about p {
 	font-family: 'Lobster', 'Raleway', sans-serif;
-    height: auto;
   display: block;
   position: relative;
   text-align: center;
    display: block;
    color: clack;
    letter-spacing: 2px;
-    font-size: 35px;
+    font-size: 5em;
     }
 .about::after {
   content: "";
-  background: url("http://dcldge.files.wordpress.com/2012/03/albany1.jpg");
+  background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPsg6urhD6XK1rXk8wjSrGwDPm84CNZLQrrayMtL-sFHjPBNP-yL88Xkcm);
   opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
+  z-index: -1;   
 }
-
 
 
 #header {
