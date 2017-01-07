@@ -5,7 +5,6 @@ html, body{
     font-size: 100%;
     font: inherit;
 	width: auto;
-	background-color: grey;
 
 
 }
@@ -172,19 +171,7 @@ margin-right: 168px;
 }
 
 
-.home {
-      width: auto;
-    height: 990px;
-    min-height: 628px;
-	background-color:white;
-     -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    margin-bottom: -10px;
 
-
-}
 
 
     .header{
@@ -199,10 +186,13 @@ margin-right: 168px;
   font-size: 55px;
   padding: 0 0 0 0;
   margin-top: -35px;
-
-
-
-
+	width: auto;
+    height: 990px;
+    min-height: 628px;
+	background-color:grey;
+     -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 
 }
 
@@ -237,9 +227,9 @@ margin-right: 168px;
    display: block;
    color: clack;
    letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 35px;
     }
-about::after {
+.about::after {
   content: "";
   background: url("http://dcldge.files.wordpress.com/2012/03/albany1.jpg");
   opacity: 0.5;
@@ -268,12 +258,6 @@ about::after {
 }
 
 
-.projects {
-    height: inherit;
-
-
-
-    }
 
     .contact {
 	background-color: rgb(198, 214, 239);
