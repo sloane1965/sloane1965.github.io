@@ -235,7 +235,7 @@ text-transform: uppercase;
 .about {
   margin-top: 53px;
     position: relative;
-    height: 1000px;
+    height: 1500px;
 	width: auto;
   min-height: 628px;
     -webkit-background-size: 100% 100%;
@@ -353,7 +353,6 @@ $dark :  #3d3d3d ;
   width: auto;
   min-height: 628px;
 
-    padding: 200px 0 0 0;
 
 }
 .main::after {
@@ -393,7 +392,7 @@ background-size: cover;
 
     .contact h1 h3 p{
     	position: center center;
-    	font-family: "lobster", sans-serif;
+    	font-family: "Lobster", sans-serif;
 
     }
 .btn-submit {
