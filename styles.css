@@ -288,6 +288,7 @@ about p::after {
     }
 
     .contact h1 h3{
+	z-index: 1;
     	padding: 10px;
     	position: center center;
     	width: cover;
@@ -300,6 +301,7 @@ about p::after {
     	font-family: sans-serif "lobster";
 
     }
-.contact ul {
-	list-style-type: none;
+.btn-submit {
+	background-color: #5FBA7D;
 }
+
