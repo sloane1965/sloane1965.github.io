@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-  
+
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=960px, maximum-scale=1.0" />
@@ -17,16 +17,9 @@
 <link href="https://fonts.googleapis.com/css?family=Coiny|Lobster|Passion+One|Prociono" rel="stylesheet">
   </head>
   <header>
-	  <div class="open " style="padding-bottom:15px">
-  <span class="cls "></span>
-  <span>
-    <ul class="sub-menu ">
-      <li class="active"> <a href="https://sloane1965.github.io">Home</a> </li>
-    </ul>
-  </span>
-  <span class="cls "></span>
 
-		</div>
+
+
 	<div class="socicons" style = "text-align: center;">
 				<a href="https://www.facebook.com/oldmansloane">
 					<i class="fa fa-facebook-square fa-3x " aria-hidden="true "></i></a>
@@ -43,7 +36,6 @@
 	</header>
 <body>
 	  <div class="contact">
-<div class="container">
   <div class="row header">
 
     <h1>Contact me! &nbsp;</h1>
@@ -51,43 +43,47 @@
   </div>
   <div class="row body">
     <form action="https://formspree.io/oldmansloane@gmail.com" method="post">
-      <ul style="list-style-type: none">
+      <ul class="container" style="list-style-type: none">
 
-        <li class="col-md-8">
-          <p class="left">
+        <li>
+          <p>
             <label for="first_name">first name</label>
             <input type="text" name="first_name" placeholder="John" />
           </p>
-          <p class="pull-right">
+          <p>
             <label for="last_name">last name</label>
-            <input type="text" name="last_name" placeholder="Smith" />      
+            <input type="text" name="last_name" placeholder="Smith" />
           </p>
         </li>
-        <li class="col-md-8">
-          <p class="left">
+        <li>
+          <p>
 		<label for="email"><span class="req">Email*</span></label>
             <input type="email" name="email" placeholder="youremail@email.com" />
           </p>
-        </li>        
- 
+        </li>
+
         <li>
 		<label for="comments">Message</label>
           <textarea cols="46" rows="3" name="comments"></textarea>
         </li>
-        
+
         <li>
           <input class="btn btn-submit" type="submit" value="Submit" />
           <small>or press <strong>enter</strong></small>
         </li>
 
       </ul>
-    </form>  
+
+    </form>
+    <a href="index.html">
+    <i class="fa fa-home fa-4x" aria-hidden="true";>  Go Home!</i></a>
   </div>
 </div>
 	  </div>
-	  
+
 
   </body>
+
  <script>
 $(document).ready(function() {
   $(document).delegate('.open', 'click', function(event){
