@@ -40,6 +40,30 @@ html, body{
         display: block !important;
     }
 }
+#home2 {
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -o-animation-iteration-count: infinite;
+}
+
+#home3 {
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -o-animation-iteration-count: infinite;
+}
+#contactform {
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -o-animation-iteration-count: infinite;
+}
+#aboutbox {
+  text-align: center;
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  -o-animation-iteration-count: infinite;
+}
+
+
 
 .open {
   padding-bottom: 10px;
@@ -213,6 +237,23 @@ border-radius: 25px;
  z-index: 1;
 
 }
+.main::after {
+  content: "";
+  background: url("http://fellowproducts.com/wp-content/uploads/2015/05/brewingbasicshorizontal.jpg")no-repeat center center;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 
 	.main h2 {
     color: black;
@@ -276,14 +317,11 @@ background-size: cover;
 }
 @import "compass/css3";
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+
 @import "compass/reset";
 $fontSans : 'Coiny', sans-serif;
 
 
-$red : #e74c3c ;
-$redAL : rgba(231, 76, 60, 0.95);
-$dark :  #3d3d3d ;
 
 
 @mixin transition($transition-property, $transition-time, $method) {
@@ -303,7 +341,7 @@ $dark :  #3d3d3d ;
  	margin: .25em 0;
  	color: black;
  	position: relative;
- 	 transition:width 2s, background .2s;
+ 	 transition:width 5s, background 2s;
    -webkit-transform: translate3d(0,0,0);
  	 clear: both;
  	 &:nth-of-type(2n) {
@@ -355,23 +393,9 @@ $dark :  #3d3d3d ;
 
 
 }
-.main::after {
-  content: "";
-  background: url("http://fellowproducts.com/wp-content/uploads/2015/05/brewingbasicshorizontal.jpg")no-repeat center center;
-  image-rendering: -webkit-optimize-contrast;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+.thumbnail:hover {
+  background-color: grey;
 }
-
 
 
     .contact {
