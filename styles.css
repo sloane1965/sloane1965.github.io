@@ -226,7 +226,7 @@ border-radius: 25px;
   position: relative;
   top: 100px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 80px;
   margin-top: -150px;
 
   width: auto;
@@ -284,7 +284,7 @@ text-transform: uppercase;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
-    padding-top: 40px;
+    padding-top: 50px;
 
 }
 
