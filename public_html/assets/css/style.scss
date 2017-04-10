@@ -232,7 +232,6 @@ border-radius: 25px;
 .about h2 {
   font-family: $mainFont;
   display: block;
-  position: relative;
   text-align: center;
    display: block;
    color: black;
@@ -536,8 +535,10 @@ list-style: none;
   cursor: pointer;
   display: inline-block;
   outline: none;
-  background-color: blue;
-  padding: 10px 16px;
+  background-color: black;
+  color: red;
+  font-weight: bold;
+  padding: 15px 20px;
   position: relative;
   border-radius: 5%;
 
@@ -549,7 +550,7 @@ form {
   margin-top: 100px;
   color: black;
   width: 100%;
-  background: white;
+  background: grey;
   display: inline-block;
   text-align: left;
   height: auto;
@@ -570,8 +571,8 @@ input[type="text"] {
     font-size: 18px;
     margin-top: 20px;
     color: white;
-    background-color: blue;
-    padding: 3px;
+    background-color: black;
+    padding: 5px;
     text-transform: uppercase;
     }
 
