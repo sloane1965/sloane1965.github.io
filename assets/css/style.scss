@@ -25,7 +25,7 @@ body {
 }
 .top::after {
 	 content: "";
-  background: url("http://dcldge.files.wordpress.com/2012/03/albany1.jpg")no-repeat center center;
+  background: url("../images/albany1.jpg")no-repeat center center;
   image-rendering: -webkit-optimize-contrast;
   -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -64,7 +64,7 @@ background-size: cover;
 .open {
 margin-top: -30px;
   position: fixed;
-  top: 40px;
+  top: 75px;
   right: 40px;
   width: 50px;
   height: 50px;
@@ -191,7 +191,7 @@ margin-right: 168px;
 	font-size:30px;
   position:relative;
   padding-bottom: 15px;
-	text-align: center;
+
 
 
 .fa-paper-plane {
@@ -243,7 +243,7 @@ border-radius: 25px;
 
 .about::after {
 	 content: "";
-  background: url("http://fellowproducts.com/wp-content/uploads/2015/05/brewingbasicshorizontal.jpg")no-repeat center center;
+  background: url("../images/brewingbasicshorizontal.jpg")no-repeat center center;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
   -webkit-background-size: cover;
